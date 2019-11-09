@@ -33,7 +33,8 @@ def merge_pigeon(name,data)
 end
 
 def nyc_pigeon_organizer(data)
-  names=names_list(data).flatten.uniq
+  names=names_list(data)
+  names=names.flatten.uniq
   pigeon_hash={}
   names.map do |element|
     pigeon_hash[element]=merge_pigeon(element,data)
