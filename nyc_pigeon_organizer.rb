@@ -5,6 +5,7 @@ def names_list(data)
       names << value1
     end
   end
+  names
 end
 
 def hash_pigeon(onekey,name,data)
